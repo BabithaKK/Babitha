@@ -1,0 +1,88 @@
+b.31
+c.20
+a.100
+c.63
+a.9
+b.K
+a.P
+b. FR
+c. bccab
+a.GOV
+2
+38
+window
+sun
+BE
+
+                         JAVA
+						 
+1)Ans: java is an programming language.It is used to build apps and other websites.javac is a java compiler which will compile the program after writing the code.
+2) Ans: JDK stands for java development kit ,without JDK we cant compile the program.It is present in the bin folder
+        JRE stands for java runtime environment.it is used to run the program.
+		JVM it stands for java virtual machine which is not visible to us and it is present inside the jdk.
+3) Ans:one of the limitations of array is it must contain the same data type as before when it is declaring
+4) Ans: class is a location where the program starts and where we declare the class name
+        object is a grop of variables
+		signature of the class is it must starts with:: class Class_Name {}  
+5) Ans: Array is a group of characters or variables that is declared together with the symbol [].
+6) Ans:we write the program in language which is english that is not understand by the system that program in .java format
+       this .java file is converted into .class file that will be in binary form which the system can understands.
+       here the difference is we will write the progrem that is saved as .java and then it is convertd into .class format.
+7)Ans: 6
+8) Ans: main method is  the location where the actual program starts.we can run the program without main method but it will not be compiled.
+9) Ans: Java is a object oriented programming language.It is used to develop the apps .It contains JDK,JVM, and JRE 
+10) Ans: variable is a group of characters .It may be a characters,integers or decimal values 
+          it is classsified into 2 types 1.static varibles
+                                         2.Nonstatic variables
+11) Ans: class is a nonstatic variable that we are  giving to our program  and it my be anything. clss variable is a name of the program
+12)Ans:  Data type is a static variable which is used to store the perticular information
+        It i classified as
+         1. int
+         2.float		 
+		3.char
+		4.double
+		5.string
+		6. boolean
+		7.long
+		8. short
+ char is used to store the characters
+ int is used to the integers
+ float is used to store the decimal values 
+boolean will dispaly the output as TRUE or FALSE
+double and long is used to store the big values
+13).Ans: JAVA is a object oriented programming language
+         Java is platform independent.
+		 It can works on any operating system
+14) Ans: array is classified into single dimensional and multi dimensinal array
+
+
+15) Ans: array index out of bound exception is a error occurs when  declaring all the variables. when it is diferent from previously declared statements
+       this line will be printed.  and it may  also caused dut to an synatx error in the line. 		 
+16)System.out.println() is a statement where we will declare the statements  to print the output 
+ here System means predefined  class variable
+ 
+ 17) double equal opertor is used to compare the two or more given objects.
+ 18)the dot operator is used to access the class or structure of the member.
+ 19) the object class is the basic class of all classes
+ 
+ 
+ 
+ 20)  Ans:key words of java are
+ int
+ float
+ char
+ double
+ float
+ public
+ private
+ class
+ new
+ break
+ long
+ double
+ array
+ 
+		 
+		 
+ 
+ 			   
