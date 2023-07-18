@@ -5,15 +5,15 @@ class WorkerRunner{
  
  
  System.out.println("calling 1st constructor from WorkerRunner...");
-	WorkerRunner ref1 = new WorkerRunner("Ranjith" , "Management" , 45 ,60 ,5);
-	ref1.info();
+	Worker ref1 = new Worker("Ranjith" , "Management" , 45 ,60 ,5);
+	ref1.printInstanceVariables();
 			System.out.println(" ");
 
 	
 			
 	    System.out.println("calling 2nd constructor from WorkerRunner...");
-    WorkerRunner ref2 = new WorkerRunner("Rakshith" ,"Software Engineer",35 , 65 ,6);
-    ref2.info();
+    Worker ref2 = new Worker("Rakshith" ,"Software Engineer",35 , 65 ,6);
+    ref2.printInstanceVariables();
 		System.out.println(" ");
  }
  
