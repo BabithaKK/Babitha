@@ -1,0 +1,223 @@
+                        JAVA 
+1. Syntax Error
+2. Error
+3. Error
+4. length is 4
+   Sum of values is :200
+   Hello.a
+   
+5. 
+
+6.  Method parameters
+   A method's declaration includes a list of variables which tell us the type and order of variables that the method can accept and this list is called the method parameters.   
+   Method parameters are the variables that appear in the definition of a method and specify the type and number of values that a method can accept.
+   This includes primitive types such as int, float, boolean,char and non-primitive or object types such as an array.
+   
+ 7.   Compile-time polymorphism is achieved through method overloading.
+     
+   class example
+{
+
+  public static int sum (int x, int y){
+    return x + y;
+  }
+
+  
+  public static int sum (int x, int y, int z){
+     return x + y + z;
+  }
+
+  public static void main (String[] args){
+   
+    System.out.println (sum (10, 20));
+
+    
+    System.out.println (sum (10, 20, 30));
+  }
+}
+
+
+8)  Varargs is a short name for variable arguments.Variable Arguments (Varargs) in Java is a method that takes a variable number of arguments. 
+ Variable Arguments in Java simplifies the creation of methods that need to take a variable number of arguments.
+ The Varargs method is implemented by using the single dimensions arrays concept. Hence, in the Varargs method, we can differentiate arguments by using Index
+
+
+9).   A java package is a group of similar types of classes, interfaces and sub-packages.
+    Packages are used for Preventing naming conflicts .Packages can be considered as data encapsulation.
+  Types of imports are 
+   1.explicit
+   2.implicit
+  
+Explicit import : Classes are available inside the package, Explicit means direct or when we give the proper path of the java class it will call as explicit import.  
+
+Implicit import : Implicit means indirect, When we load all the classes of the package in our java code by using (*) it will call as implicit import.
+
+
+10.) When a constructor is called from another constructor in the same class this process is known as constructor chaining.
+     When we create an instance of a derived class, all the constructors of the inherited class are first invoked, 
+	 after that the constructor of the calling class  is invoked.
+	 
+ We can achieve constructor chaining in two ways:
+
+    1.Within the same class: If the constructors belong to the same class, we use this keyword.
+    2.From the base class: If the constructor belongs to different classes, we use the super keyword to call the constructor from the base class.
+
+  from  these 2 ways we can achieve constructor chaininig.
+  
+  Example;
+   within the same class
+
+class Main {
+    public static void main(String args[]) {
+        Employee employee = new Employee(); 
+        System.out.println("Employee Name: " + employee.getName());
+        System.out.println("Employee ID: " + employee.getEmpID());
+    }
+}
+
+class Employee{
+    private String name;
+    private int empID;
+
+    
+    public Employee(){ 
+        this("NULL");
+    }
+
+    
+    public Employee(String name){
+        this(name, 0);  
+    }
+
+    
+    public Employee(String name, int empID){ 
+        this.name = name;
+        this.empID = empID;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public int getEmpID(){
+        return empID;
+    }
+}
+
+                        example 2: from the parent class
+   
+   
+   class Main {
+    public static void main(String args[]) {
+        WagonR car1 = new WagonR("WagonR 2022", "Automobile", 4, 4, 5);
+
+        System.out.println("Vehicle name: " + car1.getName());
+        System.out.println("Vehicle type: " + car1.getType());
+        System.out.println("Car doors: " + car1.getDoors());
+        System.out.println("Car wheels: " + car1.getWheels());
+        System.out.println("WagonR seats: " + car1.getSeats());
+    }
+}
+
+class Vehicle{
+    private String name;
+    private String type;
+
+    public Vehicle(String name, String type) {
+        this.name = name;
+        this.type = type;
+        System.out.println("Vehicle constructor invoked!");
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public String getType(){
+        return type;
+    }
+}
+
+
+class Car extends Vehicle{
+    private int doors;
+    private int wheels;
+
+    public Car(String name, String type, int doors, int wheels){
+        super(name, type); // Vehicle class constructor is called
+        this.doors = doors;
+        this.wheels = wheels;
+        System.out.println("Car constructor invoked!");
+    }
+
+    public int getDoors(){
+        return doors;
+    }
+
+    public int getWheels(){
+        return wheels;
+    }
+}
+
+
+11. )
+
+    class FibonacciExample{  
+ static int n1=0,n2=1,n3=0;    
+ static void printFibonacci(int count){    
+    if(count>0){    
+         n3 = n1 + n2;    
+         n1 = n2;    
+         n2 = n3;    
+         System.out.print(" "+n3);   
+         printFibonacci(count-1);    
+     }    
+ }    
+ public static void main(String args[]){    
+  int count=10;    
+  System.out.print(n1+" "+n2);//printing 0 and 1    
+  printFibonacci(count-2);
+ }  
+}  
+
+12.    we can do traverse through the list once and check whether each integer is completely divided by two or not. in this way we can find the odd number.
+
+
+
+ public static boolean isListOdd(List<Integer> list) {
+    for (int i : list) {
+        if (i % 2 == 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+
+13.
+   public class sameelements {
+ public static void main(String args[]) {
+  int[] array1 = {2, 1, 3};
+  int[] array2 = {3, 2, 1};
+  System.out.println("The first array is: "+Arrays.toString(array1));
+  System.out.println("The second array is: "+Arrays.toString(array2));
+  Arrays.sort(array1);
+  Arrays.sort(array2);
+  System.out.println("The sorted first array is: "+Arrays.toString(array1));
+  System.out.println("The sorted second array is: "+Arrays.toString(array2));
+  System.out.println("Do the arrays contain the same elements? "
+  +Arrays.equals(array1, array2));
+}
+}
+
+
+14.Enumeration
+  An enumeration also called as enum in Java is a special data type which contains a set of predefined constants.
+  Enums are used to create our own data type like classes.
+  
+  
+15.the JVM searches the file system for the definition of the class, that is the Java byte code. The file has the extension of . class .
+ The CLASSPATH environment variable contains locations where Java classes are stored.  
+ 
+  16. The components of a class, such as its instance variables or methods are called the members of a class or class members. 
+  A class member is declared with an access modifier to specify how it is accessed by the other classes in Java.
