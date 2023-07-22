@@ -1,0 +1,15 @@
+        SQL Test
+1.  CREATE DATABASE;
+2. 	CRETAE TABLE TABLE_NAME;
+3.ALTER TABLE  table_name ADD column_name1 data_type constraint;	
+4.ALTER TABLE table_name DROP column column_name;
+5. ALTER TABLE table_name  RENAME COLUMN old_name TO new_name ;
+6.ALTER TABLE table_name MODIFY COLUMN column_name datatype;
+7. UPDATE table_name SET column_name1 = new-value1,column_name2=new-value2, WHERE condition;
+8. DELETE FROM table_name WHERE condition;
+9. SELECT TABLE('character', column_name) AS position FROM table_name;
+10.      COUNT:SELECT COUNT(*) FROM TABLE;
+         SUM:SELECT SUM(column_name) FROM TABLE;
+         AVG:SELECT AVG(column_name) FROM table_name; 
+         MIN:SELECT MIN(column_name) FROM table_name;
+         MAX:SELECT MAX(column_name) FROM table_name;
